@@ -16,4 +16,66 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: aliceblue;
+  background-image: linear-gradient(to right top, rgb(60, 127, 185), rgb(100, 147, 188), rgb(163, 192, 218), rgb(179, 216, 250));
 }
+main {
+  margin: 32px;
+}
+
+.card--container {
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 1rem;
+  min-width: 550px;
+  max-width: 800px;
+}
+
+.card--image {
+  align-self: stretch;
+}
+
+.card--image img {
+  width: 300px;
+  height: 100%;
+  border-radius: 0.9rem;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0px;
+}
+
+.card-content {
+  display: flex;
+  flex-grow: 1;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card--content--top {
+  padding: 1.4rem;
+  background-color: aliceblue;
+}
+
+.card-content--bottom {
+  font-size: 1.0rem;
+  padding: 1.4rem;
+  background-color: aliceblue;
+  border-bottom-right-radius: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card--content--bottom--left {
+  width: 70%;
+}
+
+.card--content--bottom-right {
+  align-self: flex-start;
+}
+
